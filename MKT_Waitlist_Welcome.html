@@ -6,60 +6,38 @@
     <meta name="x-apple-disable-message-reformatting" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="telephone=no,address=no,email=no,date=no,url=no" name="format-detection" />
-    <meta name="color-scheme" content="dark only" />
-    <meta name="supported-color-schemes" content="dark" />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <style type="text/css">
-      :root { color-scheme: dark only; }
-      body { margin: 0 !important; padding: 0 !important; background: #0A0A0A !important; background-color: #0A0A0A !important; }
+      body { margin: 0 !important; padding: 0 !important; }
       table { border-collapse: collapse; }
-      div, td, th, p, span, h1, h2, h3, h4, h5, h6 { color: inherit; }
-
-      /* Gmail-specific targeting — u+#body only matches inside Gmail's rendered output */
-      u + #body .gmail-force-dark { background: #0A0A0A !important; background-color: #0A0A0A !important; }
-      u + #body .gmail-force-card { background: #171717 !important; background-color: #171717 !important; }
-      u + #body .gmail-force-elevated { background: #262626 !important; background-color: #262626 !important; }
-      u + #body table, u + #body td, u + #body tr { background-color: inherit !important; }
-
-      /* Force dark regardless of OS setting */
-      @media (prefers-color-scheme: light) {
-        body { background: #0A0A0A !important; background-color: #0A0A0A !important; }
-        .gmail-force-dark { background: #0A0A0A !important; background-color: #0A0A0A !important; }
-        .gmail-force-card { background: #171717 !important; background-color: #171717 !important; }
-        .gmail-force-elevated { background: #262626 !important; background-color: #262626 !important; }
-        h1, p, span, td, div { color: inherit !important; }
-      }
     </style>
   </head>
-  <body id="body" bgcolor="#0A0A0A" style="margin:0;padding:0;background:#0A0A0A !important;background-color:#0A0A0A !important;">
+  <body bgcolor="#0A0A0A" style="margin:0;padding:0;background-color:#0A0A0A;">
 
-    <!-- Gmail wrapper div — Gmail respects background-color on divs even when it strips body/table styles -->
-    <div class="gmail-force-dark" style="background:#0A0A0A !important;background-color:#0A0A0A !important;margin:0;padding:0;">
-
-    <table class="gmail-force-dark" bgcolor="#0A0A0A" border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#0A0A0A !important;background-color:#0A0A0A !important;">
+    <table bgcolor="#0A0A0A" border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#0A0A0A;">
       <tbody>
         <tr>
-          <td class="gmail-force-dark" bgcolor="#0A0A0A" align="center" style="padding:40px 20px;background:#0A0A0A !important;background-color:#0A0A0A !important;">
+          <td bgcolor="#0A0A0A" align="center" style="padding:40px 20px;background-color:#0A0A0A;">
 
-            <table class="gmail-force-card" bgcolor="#171717" width="600" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px;width:100%;background:#171717 !important;background-color:#171717 !important;border-radius:12px;overflow:hidden;border:1px solid #262626;">
+            <table bgcolor="#171717" width="600" border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px;width:100%;background-color:#171717;border-radius:12px;overflow:hidden;border:1px solid #262626;">
               <tbody>
 
                 <!-- Top accent bar -->
                 <tr>
-                  <td bgcolor="#FF5019" height="3" style="height:3px;background:linear-gradient(135deg,#FF5019 0%,#FF8533 100%) !important;background-color:#FF5019 !important;line-height:3px;font-size:3px;">&nbsp;</td>
+                  <td bgcolor="#FF5019" height="3" style="height:3px;background-color:#FF5019;line-height:3px;font-size:3px;">&nbsp;</td>
                 </tr>
 
                 <!-- Logo -->
                 <tr>
-                  <td class="gmail-force-card" bgcolor="#171717" style="padding:40px 40px 32px;background:#171717 !important;background-color:#171717 !important;">
+                  <td bgcolor="#171717" style="padding:40px 40px 32px;background-color:#171717;">
                     <img src="https://raw.githubusercontent.com/hkzaii/newsletter-icons/main/keyflo-logo.png" alt="KeyFlo" width="180" height="46" style="display:block;border:none;outline:none;text-decoration:none;" />
                   </td>
                 </tr>
 
                 <!-- Hero -->
                 <tr>
-                  <td class="gmail-force-card" bgcolor="#171717" style="padding:0 40px 24px;background:#171717 !important;background-color:#171717 !important;">
-                    <h1 style="margin:0;padding:0;font-size:32px;line-height:1.2;font-weight:700;color:#FFFFFF !important;font-family:'DM Sans',sans-serif;">
+                  <td bgcolor="#171717" style="padding:0 40px 24px;background-color:#171717;">
+                    <h1 style="margin:0;padding:0;font-size:32px;line-height:1.2;font-weight:700;color:#FFFFFF;font-family:'DM Sans',Arial,sans-serif;">
                       Welcome, {{{name}}}.
                     </h1>
                   </td>
@@ -67,30 +45,30 @@
 
                 <!-- Divider -->
                 <tr>
-                  <td class="gmail-force-card" bgcolor="#171717" style="padding:0 40px;background:#171717 !important;background-color:#171717 !important;">
+                  <td bgcolor="#171717" style="padding:0 40px;background-color:#171717;">
                     <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr><td bgcolor="#262626" height="1" style="height:1px;line-height:1px;font-size:1px;background:#262626 !important;background-color:#262626 !important;">&nbsp;</td></tr>
+                      <tr><td bgcolor="#262626" height="1" style="height:1px;line-height:1px;font-size:1px;background-color:#262626;">&nbsp;</td></tr>
                     </table>
                   </td>
                 </tr>
 
                 <!-- Body -->
                 <tr>
-                  <td class="gmail-force-card" bgcolor="#171717" style="padding:32px 40px;background:#171717 !important;background-color:#171717 !important;">
+                  <td bgcolor="#171717" style="padding:32px 40px;background-color:#171717;">
 
-                    <p style="margin:0 0 24px;font-size:16px;color:#E5E5E5 !important;line-height:1.7;font-family:'Inter',sans-serif;">
-                      You're officially on the <strong style="color:#FFFFFF !important;">KeyFlo waitlist.</strong>
+                    <p style="margin:0 0 24px;font-size:16px;color:#E5E5E5;line-height:1.7;font-family:'Inter',Arial,sans-serif;">
+                      You're officially on the <strong style="color:#FFFFFF;">KeyFlo waitlist.</strong>
                     </p>
 
-                    <p style="margin:0 0 24px;font-size:16px;color:#E5E5E5 !important;line-height:1.7;font-family:'Inter',sans-serif;">
+                    <p style="margin:0 0 24px;font-size:16px;color:#E5E5E5;line-height:1.7;font-family:'Inter',Arial,sans-serif;">
                       In a world where we can send a 4K video instantly, sending $50 shouldn't feel like filling out a tax return. We're building KeyFlo so you can send, spend, and manage money exactly where your conversations happen.
                     </p>
 
                     <!-- Tagline block -->
                     <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:32px;">
                       <tr>
-                        <td class="gmail-force-elevated" bgcolor="#262626" style="border-left:3px solid #FF5019;padding:12px 16px;background:#262626 !important;background-color:#262626 !important;border-radius:0 8px 8px 0;">
-                          <p style="margin:0;font-size:16px;font-weight:600;color:#FF8533 !important;font-style:italic;font-family:'DM Sans',sans-serif;">
+                        <td bgcolor="#262626" style="border-left:3px solid #FF5019;padding:12px 16px;background-color:#262626;border-radius:0 8px 8px 0;">
+                          <p style="margin:0;font-size:16px;font-weight:600;color:#FF8533;font-style:italic;font-family:'DM Sans',Arial,sans-serif;">
                             No switching. No friction. Just flow.
                           </p>
                         </td>
@@ -98,21 +76,21 @@
                     </table>
 
                     <!-- What happens next -->
-                    <p style="margin:0 0 12px;font-size:18px;font-weight:700;color:#FFFFFF !important;font-family:'DM Sans',sans-serif;">
+                    <p style="margin:0 0 12px;font-size:18px;font-weight:700;color:#FFFFFF;font-family:'DM Sans',Arial,sans-serif;">
                       What happens next?
                     </p>
-                    <p style="margin:0 0 32px;font-size:16px;color:#E5E5E5 !important;line-height:1.7;font-family:'Inter',sans-serif;">
+                    <p style="margin:0 0 32px;font-size:16px;color:#E5E5E5;line-height:1.7;font-family:'Inter',Arial,sans-serif;">
                       While we're in internal testing, you've secured your spot for the early-access rollout. To ensure we're building what you actually need, could you hit reply and tell us one thing:
                     </p>
 
                     <!-- Question block -->
                     <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:32px;">
                       <tr>
-                        <td class="gmail-force-elevated" bgcolor="#262626" style="background:#262626 !important;background-color:#262626 !important;border:1px solid #3D1A0A;border-radius:10px;padding:24px;">
-                          <p style="margin:0 0 8px;font-size:16px;font-weight:600;color:#FFFFFF !important;font-family:'DM Sans',sans-serif;">
+                        <td bgcolor="#262626" style="background-color:#262626;border:1px solid #3D1A0A;border-radius:10px;padding:24px;">
+                          <p style="margin:0 0 8px;font-size:16px;font-weight:600;color:#FFFFFF;font-family:'DM Sans',Arial,sans-serif;">
                             What's the most annoying part about how you pay people right now?
                           </p>
-                          <p style="margin:0;font-size:14px;color:#737373 !important;line-height:1.6;font-family:'Inter',sans-serif;">
+                          <p style="margin:0;font-size:14px;color:#737373;line-height:1.6;font-family:'Inter',Arial,sans-serif;">
                             We read every reply — it helps us prioritize which features we launch first.
                           </p>
                         </td>
@@ -120,40 +98,40 @@
                     </table>
 
                     <!-- What to expect -->
-                    <p style="margin:0 0 16px;font-size:18px;font-weight:700;color:#FFFFFF !important;font-family:'DM Sans',sans-serif;">
+                    <p style="margin:0 0 16px;font-size:18px;font-weight:700;color:#FFFFFF;font-family:'DM Sans',Arial,sans-serif;">
                       What to expect next:
                     </p>
 
                     <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:32px;">
                       <tr>
-                        <td class="gmail-force-card" bgcolor="#171717" style="padding:14px 0;border-bottom:1px solid #262626;background:#171717 !important;background-color:#171717 !important;">
-                          <p style="margin:0 0 3px;font-size:14px;font-weight:600;color:#FFFFFF !important;font-family:'Inter',sans-serif;">Sneak Peeks</p>
-                          <p style="margin:0;font-size:14px;color:#737373 !important;font-family:'Inter',sans-serif;">Unfiltered looks at the UI/UX.</p>
+                        <td bgcolor="#171717" style="padding:14px 0;border-bottom:1px solid #262626;background-color:#171717;">
+                          <p style="margin:0 0 3px;font-size:14px;font-weight:600;color:#FFFFFF;font-family:'Inter',Arial,sans-serif;">Sneak Peeks</p>
+                          <p style="margin:0;font-size:14px;color:#737373;font-family:'Inter',Arial,sans-serif;">Unfiltered looks at the UI/UX.</p>
                         </td>
                       </tr>
                       <tr>
-                        <td class="gmail-force-card" bgcolor="#171717" style="padding:14px 0;border-bottom:1px solid #262626;background:#171717 !important;background-color:#171717 !important;">
-                          <p style="margin:0 0 3px;font-size:14px;font-weight:600;color:#FFFFFF !important;font-family:'Inter',sans-serif;">The Global Balance</p>
-                          <p style="margin:0;font-size:14px;color:#737373 !important;font-family:'Inter',sans-serif;">How our non-custodial tech works.</p>
+                        <td bgcolor="#171717" style="padding:14px 0;border-bottom:1px solid #262626;background-color:#171717;">
+                          <p style="margin:0 0 3px;font-size:14px;font-weight:600;color:#FFFFFF;font-family:'Inter',Arial,sans-serif;">The Global Balance</p>
+                          <p style="margin:0;font-size:14px;color:#737373;font-family:'Inter',Arial,sans-serif;">How our non-custodial tech works.</p>
                         </td>
                       </tr>
                       <tr>
-                        <td class="gmail-force-card" bgcolor="#171717" style="padding:14px 0;border-bottom:1px solid #262626;background:#171717 !important;background-color:#171717 !important;">
-                          <p style="margin:0 0 3px;font-size:14px;font-weight:600;color:#FFFFFF !important;font-family:'Inter',sans-serif;">Launch Windows</p>
-                          <p style="margin:0;font-size:14px;color:#737373 !important;font-family:'Inter',sans-serif;">Exact dates for your invite.</p>
+                        <td bgcolor="#171717" style="padding:14px 0;border-bottom:1px solid #262626;background-color:#171717;">
+                          <p style="margin:0 0 3px;font-size:14px;font-weight:600;color:#FFFFFF;font-family:'Inter',Arial,sans-serif;">Launch Windows</p>
+                          <p style="margin:0;font-size:14px;color:#737373;font-family:'Inter',Arial,sans-serif;">Exact dates for your invite.</p>
                         </td>
                       </tr>
                       <tr>
-                        <td class="gmail-force-card" bgcolor="#171717" style="padding:14px 0;background:#171717 !important;background-color:#171717 !important;">
-                          <p style="margin:0 0 3px;font-size:14px;font-weight:600;color:#FFFFFF !important;font-family:'Inter',sans-serif;">Our 2026 Promise</p>
-                          <p style="margin:0;font-size:14px;color:#737373 !important;font-family:'Inter',sans-serif;">We value your attention. We'll only email you when there is actual progress to share.</p>
+                        <td bgcolor="#171717" style="padding:14px 0;background-color:#171717;">
+                          <p style="margin:0 0 3px;font-size:14px;font-weight:600;color:#FFFFFF;font-family:'Inter',Arial,sans-serif;">Our 2026 Promise</p>
+                          <p style="margin:0;font-size:14px;color:#737373;font-family:'Inter',Arial,sans-serif;">We value your attention. We'll only email you when there is actual progress to share.</p>
                         </td>
                       </tr>
                     </table>
 
-                    <p style="margin:0;font-size:16px;color:#E5E5E5 !important;line-height:1.7;font-family:'Inter',sans-serif;">
+                    <p style="margin:0;font-size:16px;color:#E5E5E5;line-height:1.7;font-family:'Inter',Arial,sans-serif;">
                       Talk soon,<br />
-                      <strong style="color:#FFFFFF !important;">The KeyFlo Team</strong>
+                      <strong style="color:#FFFFFF;">The KeyFlo Team</strong>
                     </p>
 
                   </td>
@@ -161,16 +139,16 @@
 
                 <!-- Divider -->
                 <tr>
-                  <td class="gmail-force-card" bgcolor="#171717" style="padding:0 40px;background:#171717 !important;background-color:#171717 !important;">
+                  <td bgcolor="#171717" style="padding:0 40px;background-color:#171717;">
                     <table border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr><td bgcolor="#262626" height="1" style="height:1px;line-height:1px;font-size:1px;background:#262626 !important;background-color:#262626 !important;">&nbsp;</td></tr>
+                      <tr><td bgcolor="#262626" height="1" style="height:1px;line-height:1px;font-size:1px;background-color:#262626;">&nbsp;</td></tr>
                     </table>
                   </td>
                 </tr>
 
                 <!-- Footer -->
                 <tr>
-                  <td class="gmail-force-card" bgcolor="#171717" style="padding:24px 40px 40px;background:#171717 !important;background-color:#171717 !important;">
+                  <td bgcolor="#171717" style="padding:24px 40px 40px;background-color:#171717;">
                     <!-- Social icons -->
                     <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:16px;">
                       <tr>
@@ -186,11 +164,11 @@
                         </td>
                       </tr>
                     </table>
-                    <p style="margin:0 0 8px;font-size:13px;color:#525252 !important;font-family:'Inter',sans-serif;">
-                      You're receiving this because you signed up at <a href="https://keyflo.app" style="color:#525252 !important;text-decoration:underline;" target="_blank">keyflo.app</a>.<br />
-                      <a href="https://keyflo.app/use-cases" style="color:#525252 !important;text-decoration:underline;" target="_blank">Unsubscribe</a>
+                    <p style="margin:0 0 8px;font-size:13px;color:#525252;font-family:'Inter',Arial,sans-serif;">
+                      You're receiving this because you signed up at <a href="https://keyflo.app" style="color:#525252;text-decoration:underline;" target="_blank">keyflo.app</a>.<br />
+                      <a href="https://keyflo.app/use-cases" style="color:#525252;text-decoration:underline;" target="_blank">Unsubscribe</a>
                     </p>
-                    <p style="margin:0;font-size:12px;color:#404040 !important;font-family:'Inter',sans-serif;">© 2026 KeyFlo. All rights reserved.</p>
+                    <p style="margin:0;font-size:12px;color:#404040;font-family:'Inter',Arial,sans-serif;">© 2026 KeyFlo. All rights reserved.</p>
                   </td>
                 </tr>
 
@@ -201,8 +179,6 @@
         </tr>
       </tbody>
     </table>
-
-    </div><!-- end gmail-force-dark wrapper -->
 
   </body>
 </html>
