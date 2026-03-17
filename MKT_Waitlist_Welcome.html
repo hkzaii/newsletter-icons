@@ -12,11 +12,14 @@
     <style>
       :root { color-scheme: dark; }
       * { -webkit-text-size-adjust: none; }
+      body, table, td, div, p, a { -webkit-text-size-adjust: none; }
       body { background-color: #0A0A0A !important; color: #FFFFFF !important; }
       @media (prefers-color-scheme: light) {
         body { background-color: #0A0A0A !important; color: #FFFFFF !important; }
-        .email-card { background-color: #171717 !important; border-color: #262626 !important; }
-        .email-wrapper { background-color: #0A0A0A !important; }
+        table { background-color: #0A0A0A !important; }
+        .email-card { background-color: #171717 !important; }
+        .email-body { background-color: #171717 !important; }
+        p, h1, h2, h3, span, td { color: inherit !important; }
       }
     </style>
   </head>
@@ -150,14 +153,25 @@
                   </td>
                 </tr>
                 <tr>
-                  <td style="padding:24px 40px 40px;">
+                  <td style="padding:24px 40px 40px;background-color:#171717 !important;">
+                    <!-- Social icons -->
+                    <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:16px;">
+                      <tr>
+                        <td style="padding-right:12px;">
+                          <a href="https://x.com/KeyFlo_App" target="_blank" style="text-decoration:none;">
+                            <img src="https://raw.githubusercontent.com/hkzaii/newsletter-icons/main/icon-twitter.png" alt="Twitter/X" width="24" height="24" style="display:block;border:none;outline:none;" />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="https://www.instagram.com/keyfloapp/" target="_blank" style="text-decoration:none;">
+                            <img src="https://raw.githubusercontent.com/hkzaii/newsletter-icons/main/icon-instagram.png" alt="Instagram" width="24" height="24" style="display:block;border:none;outline:none;" />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
                     <p style="margin:0 0 8px;font-size:13px;color:#404040;font-family:'Inter',sans-serif;">
-                      You're receiving this because you signed up at keyflo.app.<br />
-                      <a href="{{{unsubscribe_url}}}" style="color:#404040;text-decoration:underline;" target="_blank">Unsubscribe</a>
-                      &nbsp;·&nbsp;
-                      <a href="https://x.com/KeyFlo_App" style="color:#404040;text-decoration:underline;" target="_blank">Twitter/X</a>
-                      &nbsp;·&nbsp;
-                      <a href="https://keyflo.app" style="color:#404040;text-decoration:underline;" target="_blank">Website</a>
+                      You're receiving this because you signed up at <a href="https://keyflo.app" style="color:#404040;text-decoration:underline;" target="_blank">keyflo.app</a>.<br />
+                      <a href="https://keyflo.app/use-cases" style="color:#404040;text-decoration:underline;" target="_blank">Unsubscribe</a>
                     </p>
                     <p style="margin:0;font-size:12px;color:#262626;font-family:'Inter',sans-serif;">© 2026 KeyFlo. All rights reserved.</p>
                   </td>
